@@ -1,4 +1,4 @@
--Telnet Server for M5StickCPlus
+Telnet Server for M5StickCPlus
 
 This is a simple Telnet server example for the M5StickCPlus microcontroller using the Arduino platform and the M5StickCPlus library. It allows you to establish a Telnet connection with the M5StickCPlus and send/receive text messages.
 
