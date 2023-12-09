@@ -54,10 +54,7 @@ void loop() {
       char c = clients[i].read();
       Serial.print(c);
 
-      // Echo the character back to the client
-      clients[i].write(c);
-
-      // Broadcast the received character to all connected clients
+      // Broadcast the received character to all connected clients except the sender
       for (int j = 0; j < apMaxConnections; j++) {
         if (clients[j] && clients[j].connected() && j != i) {
           clients[j].write(c);
